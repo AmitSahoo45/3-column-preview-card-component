@@ -1,0 +1,232 @@
+:root {
+    --sedans: hsl(31, 77%, 52%);
+    --suves: hsl(184, 100%, 22%);
+    --luxuries: hsl(179, 100%, 13%);
+    --bigshoulder: 'Big Shoulders Display', cursive, serif;
+    --lexde: 'Lexend Deca', sans-serif;
+
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* ================================================MAINCONT=============================================== */
+
+/* =============================================MAINBOX============================================== */
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 120px;
+}
+
+
+
+/* ================================================CONT=============================================== */
+.initial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* This was very much important in the postionong of the buttons at the bottom of the div "initial" */
+    position: relative;
+}
+
+/*================================================ INITIAL================================================== */
+
+
+
+/* ===================================CCARS================================================== */
+.ccars {
+    /* width: 18vw; */
+    /* height: 65vh; */
+    /* width: 220px;
+    height: 365px; */
+    padding: 30px;
+    color: #FFFFFF;
+}
+
+/* ====================INSIDE CCARS======================= */
+.ccars>h2 {
+    font-family: var(--bigshoulder);
+    letter-spacing: 1px;
+    padding-top: 1.3rem;
+}
+
+.images{
+    width: 50px;
+    height: 50px;
+}
+.sedan {
+    background-color: var(--sedans);
+    font-family: var(--lexde);
+    position: relative;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: 220px;
+    height: 365px;
+}
+
+.suv {
+    background-color: var(--suves);
+    font-family: var(--lexde);
+    position: relative;
+    width: 220px;
+    height: 365px;
+}
+
+.luxury {
+    background-color: var(--luxuries);
+    font-family: var(--lexde);
+    position: relative;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 220px;
+    height: 365px;
+}
+
+.ccars>p {
+    font-size: 0.65rem;
+    font-weight: 500;
+    word-spacing: 1px;
+    color: rgba(255, 255, 255, 0.58);
+    line-height: 1rem;
+    padding-top: 32px;
+}
+
+/* =================================================BUTTONS ONLY=================================================== */
+.initial button {
+    /*======================== Positioning of the button================= */
+    border: 2px white solid;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.720rem;
+    border-radius: 35px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: var(--lexde);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.initial .btn-sd {
+    color: var(--sedans);
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.initial .btn-sd:hover {
+    background-color: var(--sedans);
+    color: #FFFFFF;
+    border: 2px white solid;
+}
+
+.initial .btn-sv {
+    color: var(--suves);
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.initial .btn-sv:hover {
+    background-color: var(--suves);
+    color: #FFFFFF;
+    border: 2px white solid;
+}
+
+.initial .btn-lu {
+    color: var(--luxuries);
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.initial .btn-lu:hover {
+    background-color: var(--luxuries);
+    color: #FFFFFF;
+    border: 2px white solid;
+}
+
+
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* =================================== RESPONSIVE PAGE======================================= */
+@media (min-width:350px) and (max-width:660px) {
+
+    .cont{
+        top: 50px;
+    }
+    .initial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* This was very much important in the postionong of the buttons at the bottom of the div "initial" */
+        position: relative;
+    }
+
+    .sedan,.suv,.luxury{
+        width: 60vw;
+        height: 365px;
+    }
+
+    .sedan{
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .luxury{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+}
+
+@media (min-width:200px) and (max-width:349px) {
+
+    .cont{
+        top: 50px;
+    }
+    .initial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* This was very much important in the postionong of the buttons at the bottom of the div "initial" */
+        position: relative;
+    }
+
+    .sedan,.suv,.luxury{
+        width: 60vw;
+        height: 365px;
+    }
+
+    .sedan{
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .luxury{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+}
+
+
